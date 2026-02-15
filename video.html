@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Video</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .video-page{ position: relative; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px; z-index:999; }
+    .video-wrapper{ width:min(900px, 95%); background: rgba(255,255,255,0.03); padding:12px; border-radius:12px; text-align:center; }
+    .video-wrapper iframe{ width:100%; height:56vw; max-height:560px; border:0; border-radius:8px; }
+    .video-caption{ color:#fff; margin:10px 0 6px; text-shadow:0 2px 6px rgba(0,0,0,0.6); }
+    .controls a{ background:#D43F5E; color:#fff; padding:8px 12px; border-radius:8px; text-decoration:none; }
+      .video-wrapper video { width:100%; height:56vw; max-height:560px; border:0; border-radius:8px; }
+  </style>
+</head>
+<body class="container">
+  <div class="night"></div>
+  <div class="video-page">
+    <div class="video-wrapper">
+      <h2 class="video-caption">Nuestra cancion</h2>
+        <!-- Reproductor local MP4: coloca tu archivo en videos/video.mp4 -->
+        <video id="localPlayer" controls preload="metadata" src="lover-is-a-day-audio---cuco.mp4">
+          Tu navegador no soporta el elemento <code>video</code>. Puedes descargar el archivo <a href="lover-is-a-day-audio---cuco.mp4">aquí</a>.
+        </video>
+      <div class="controls" style="margin-top:10px;">
+        <a href="index.html">Volver</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
